@@ -1,0 +1,26 @@
+.errorMsg {
+  border: 5px;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+.pictureError {
+  margin-left: 100px;
+  width: 400px;
+  height: 300px;
+}
+.errorTxt {
+  margin-left: 140px;
+  color: white;
+}
+@media (max-width: 700px) {
+  .pictureError {
+    width: 200px;
+    height: 150px;
+  }
+  .errorMsg {
+    border: 5px;
+    margin-left: 0px;
+    padding: 10px;
+  }
+}

@@ -1,0 +1,60 @@
+.containerContact {
+  height: 300px;
+  width: 400px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.one {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  margin-top: 10px;
+}
+.two {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  margin-top: 10px;
+}
+.three {
+  display: grid;
+  grid-template-rows: 1fr 4fr 1fr;
+  row-gap: 10px;
+  margin-top: 10px;
+}
+.labelName {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.ovalInput {
+  border-radius: 10px;
+  border: none;
+  padding-left: 10px;
+}
+.buttonContact {
+  background-color: rgb(63, 63, 244);
+  border: none;
+  width: 130px;
+  height: 30px;
+  border-radius: 10px;
+  color: white;
+  font-size: 15px;
+  font-family: "Trebuchet MS", sans-serif;
+}
+.buttonContact:hover {
+  background-color: rgb(42, 42, 121);
+  cursor: pointer;
+}
+textarea {
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+}
+@media (max-width: 510px) {
+  .containerContact {
+    height: 300px;
+    width: 200px;
+    position: relative;
+    margin-top: 100px;
+  }
+}

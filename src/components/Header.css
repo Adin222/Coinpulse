@@ -1,0 +1,135 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.site-name {
+  font-size: 24px;
+  padding-left: 50px;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding-right: 50px;
+  color: white;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links li:first-child {
+  margin-left: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px 10px;
+}
+
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+.hamburger-menu.active {
+  box-shadow: none;
+  background: transparent;
+}
+
+.hamburger-menu.active .line:nth-child(1) {
+  transform: rotate(43deg);
+  transform-origin: 0% 0%;
+  transition: transform 0.3s ease-in;
+}
+
+.hamburger-menu.active .line:nth-child(2) {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.hamburger-menu.active .line:nth-child(3) {
+  transform: rotate(-51deg);
+  transform-origin: 0% 0%;
+  transition: transform 0.3s ease-in;
+}
+.hamburger-menu {
+  box-shadow: none;
+  background: transparent;
+}
+.hamburger-menu .line:nth-child(1) {
+  transform: rotate(0deg);
+  transform-origin: 0% 0%;
+  transition: transform 0.3s ease-in;
+}
+
+.hamburger-menu .line:nth-child(2) {
+  opacity: 1;
+  filter: alpha(opacity=0);
+}
+
+.hamburger-menu .line:nth-child(3) {
+  transform: rotate(0deg);
+  transform-origin: 0% 0%;
+  transition: transform 0.3s ease-in;
+}
+.line {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  margin: 4px;
+}
+
+@media (max-width: 500px) {
+  .dropDownMenu {
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+  }
+  .dropDownMenu.active {
+    opacity: 1;
+  }
+  .nav-links {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: flex;
+  }
+
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .nav-links.active {
+    display: grid;
+    right: 0;
+    left: unset;
+    position: absolute;
+    z-index: 999;
+    border-radius: 8px;
+    grid-template-rows: repeat(2, 1fr);
+    background-color: rgb(63, 63, 244);
+    top: 45px;
+    padding: 10px;
+  }
+
+  .nav-links.active li {
+    margin: 5px 0;
+  }
+}

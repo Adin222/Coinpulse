@@ -1,0 +1,61 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600);
+.container {
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+  max-width: 100%;
+}
+.error {
+  width: 300px;
+  display: block;
+  margin: 0 auto;
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+table {
+  background: rgb(9, 16, 38);
+  border-radius: 0.25em;
+  border-collapse: collapse;
+  margin: 1em;
+}
+th {
+  border-bottom: 1px solid #071a20;
+  color: #e2b842;
+  font-size: 0.85em;
+  font-weight: 600;
+  padding: 0.5em 1em;
+  text-align: left;
+}
+td {
+  color: #fff;
+  font-weight: 400;
+  padding: 0.65em 1em;
+}
+td:hover {
+  cursor: pointer;
+}
+.disabled td {
+  color: rgb(14, 18, 51);
+}
+tbody tr {
+  transition: background 0.25s ease;
+}
+tbody tr:hover {
+  background: rgb(10, 8, 43);
+}
+@media (max-width: 500px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+    max-width: 100%;
+    margin-top: 65px;
+  }
+}

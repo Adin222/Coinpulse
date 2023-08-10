@@ -1,0 +1,75 @@
+.displaying {
+  margin-top: 50px;
+  height: 500px;
+  margin-left: 80px;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+.crypto-pic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cryptoName {
+  margin-top: 15px;
+  text-align: center;
+  color: white;
+}
+.cryptoText {
+  margin-top: 15px;
+  color: white;
+  padding: 5px;
+}
+.cryptoRank {
+  margin-top: 20px;
+  color: white;
+}
+.cryptoPrice {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: white;
+}
+.crp-1 {
+  box-shadow: 5px 0 5px rgba(0, 0, 0, 0.3);
+  height: 550px;
+}
+.graph {
+  display: grid;
+  grid-template-rows: 5fr 1fr;
+  box-shadow: 5px 0 5px rgba(0, 0, 0, 0.3);
+  height: 100%;
+  width: 95%;
+}
+.graph-button {
+  margin-top: 30px;
+  margin: auto;
+  background-color: rgb(63, 63, 244);
+  border: none;
+  width: 130px;
+  height: 40px;
+  border-radius: 10px;
+  color: white;
+  font-size: 15px;
+  font-family: "Trebuchet MS", sans-serif;
+}
+.graph-button:hover {
+  background-color: rgb(42, 42, 121);
+  cursor: pointer;
+}
+@media (max-width: 550px) {
+  .displaying {
+    margin-top: 50px;
+    height: 600px;
+    margin-left: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 450px) {
+  .displaying {
+    margin-top: 100px;
+    margin-left: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
