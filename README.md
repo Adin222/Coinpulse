@@ -1,2 +1,2 @@
 # Coinpulse
-Front-End project using CoinGecko API 
+React.js Front-End project using CoinGecko API 
